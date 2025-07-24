@@ -50,3 +50,4 @@ else:
                     st.success("✅ Not Spam")
             except Exception as e:
                 st.error(f"❌ Prediction error: {e}")
+
