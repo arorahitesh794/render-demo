@@ -5,10 +5,15 @@ import os
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+
+
+# Ensure 'punkt' tokenizer is available
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')
+
+
 # Ensure required NLTK resources
 try:
     stopwords.words('english')
